@@ -14,7 +14,7 @@ ws = wb.create_sheet()
 
 options=webdriver.ChromeOptions()
 driver = webdriver.Chrome('chromedriver', options=options)
-driver.get("https://www.youtube.com/watch?v=abVcyLF3yjE")
+driver.get("https://www.youtube.com/watch?v=rvZVSb9yooc")
 driver.implicitly_wait(3)
 
 time.sleep(1.5)
@@ -82,5 +82,5 @@ for i in range(len(comment_list)):
 pd_data = {"댓글 내용" : comment_final}
 youtube_pd = pd.DataFrame(pd_data)
 
-youtube_pd.to_excel('result.xlsx')
+youtube_pd.to_csv('movie5_안녕헤이즐.csv', encoding='cp949')
 
